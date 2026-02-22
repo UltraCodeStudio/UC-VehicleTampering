@@ -12,6 +12,12 @@ shared_scripts {
 
 client_scripts {
     'client/main.lua',
+    'client/target/**.lua',
+    'client/inventory/**.lua',
+    'client/notify/**.lua',
+    'client/progressbar/**.lua',
+    'client/minigames/**.lua',
+    'client/tamperingTypes/**.lua'
 }
 
 server_scripts {
