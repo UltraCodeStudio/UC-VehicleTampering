@@ -30,6 +30,7 @@ local options = {}
                     anim = { dict = action?.add?.animation?.dict or 'missmechanic', clip = action?.add?.animation?.clip or 'work2_base' },
                 })
                 if not ok then return end
+                if action.add.item.action and action.add.item.action.remove then RemoveItem(action.add.item.label) end
                 applyTampering(data.entity, actionKey)
             end,
             canInteract = function(entity)
@@ -61,6 +62,7 @@ local options = {}
                         anim = { dict = action?.remove?.animation?.dict or 'missmechanic', clip = action?.remove?.animation?.clip or 'work2_base' },
                     })
                     if not ok then return end
+                    if action.remove.item.action and action.remove.item.action.remove then RemoveItem(action.remove.item.label) end
                     removeTampering(data.entity, actionKey)
                 end,
                 canInteract = function(entity)
