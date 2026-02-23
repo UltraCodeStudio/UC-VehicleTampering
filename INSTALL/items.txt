@@ -1,0 +1,14 @@
+["wheellock"] = {
+    label = "Wheel Lock",
+    description = "Used to lock a vehicle's steering wheel.",
+    weight = 100,
+    stack = false,
+    
+},
+["impact"] = {
+    label = "Impact Wrench",
+    description = "Used to remove vehicle wheels.",
+    weight = 100,
+    stack = false,
+    
+},
